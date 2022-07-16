@@ -1,29 +1,24 @@
 import java.util.*;
 public class BinarySearch {
-    public static void binary_search(int[] arr,int lb,int ub,int key)
+    public static int binary_search(int[] arr,int lb,int ub,int key)
     {
-        boolean flag=false;
-        while(lb<=ub)
+        if(lb<=ub)
         {
-            int mid = arr.length/2;
+            int mid = lb+((ub-lb)/2);
             if(arr[mid]==key)
             {
-                System.out.print("Element Found at : "+mid);
-                flag=true;
+                return mid;
             }
             else if(key<arr[mid])
             {
-                binary_search(arr,lb,mid-1,key);
+                return binary_search(arr,lb,mid-1,key);
             }
             else
             {
-                binary_search(arr,mid+1,ub,key);
+                return binary_search(arr,mid+1,ub,key);
             }
         }
-        if(flag==false)
-        {
-            System.out.print("Element not Found ...");
-        }
+            return -1;
     }
     public static void main(String[] args)
     {
@@ -39,6 +34,8 @@ public class BinarySearch {
         Arrays.stream(arr).sorted();
         System.out.print("Enter Key : ");
         int key = s.nextInt();
-        binary_search(arr,0,no_el,key);
+//        System.out.print(Arrays.binarySearch(arr,496));
+        System.out.print(binary_search(arr,0,no_el,key));
+
     }
 }

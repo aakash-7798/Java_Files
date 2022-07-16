@@ -1,34 +1,19 @@
 import java.util.*;
 public class SelectionSort {
-    static public int GetArrayIndex(int[] arr, int key)
-    {
-        int index = 0;
-        for(int i=0;i<arr.length;i++)
+    static public void selection_sort(int a[]) {
+        for(int i=0;i<a.length;i++)
         {
-            if(arr[i]==key)
+            int m_id = i;
+            for(int j=i+1;j<a.length;j++)
             {
-                index = i;
-                break;
-            }
-        }
-        return index;
-    }
-    static public void selection_sort(int arr[]) {
-        int len = arr.length;
-        for (int i = 0; i < len; i++)
-        {
-            int min_ele = arr[i];
-            for(int j=i+1;j<len;j++)
-            {
-                if(min_ele>arr[j])
+                if(a[m_id]>a[j])
                 {
-                    min_ele = arr[j];
+                    m_id = j;
                 }
-                int idx = GetArrayIndex(arr,min_ele);
-                int temp = arr[idx];
-                arr[idx] = arr[i];
-                arr[i]= temp;
             }
+            int temp = a[m_id];
+            a[m_id] = a[i];
+            a[i] = temp;
         }
     }
 
