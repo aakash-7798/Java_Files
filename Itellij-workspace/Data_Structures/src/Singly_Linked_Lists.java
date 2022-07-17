@@ -113,7 +113,7 @@ public class Singly_Linked_Lists {
         {
             if(head.next==null)
             {
-                  head=null;
+                head=null;
             }
             head = head.next;
         }
