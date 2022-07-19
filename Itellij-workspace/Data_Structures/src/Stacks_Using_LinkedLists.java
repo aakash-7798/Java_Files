@@ -19,7 +19,7 @@ public class Stacks_Using_LinkedLists {
         }
         else
         {
-            Node temp  = head;
+//            Node temp  = head;
             new_node.next = head;
             head = new_node;
         }
