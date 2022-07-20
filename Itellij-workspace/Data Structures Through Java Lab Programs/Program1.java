@@ -6,24 +6,28 @@ import java.util.*;
 import static java.lang.Math.sqrt;
 public class Program1 {
 
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		System.out.print("Enter a Value : ");
-		int a = s.nextInt();
-		System.out.print("Enter b Value : ");
-		int b = s.nextInt();
-		System.out.print("Enter c Value : ");
-		int c = s.nextInt();
-		if((b*b)-(4*a*c)<0)
-		{
-			System.out.print("There are No Real Solutions !!");
-		}
-		else
-		{
-			int r1 = (int)Math.round((((-b) +sqrt((b*b)-(4*a*c)) ) / 2));
-			int r2 = (int)Math.round((((-b) -sqrt((b*b)-(4*a*c)) ) / 2));
-			System.out.print("The roots of equation ("+a+")X^2 +("+b+")X +"+"("+c+") are "+r1+","+r2);
-		}
-	}
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Equation is:: ax^2 + bx + c");
+        System.out.print("Enter \"a\" Value : ");
+        double a = s.nextDouble();
+
+        System.out.print("Enter \"b\" Value : ");
+        double b = s.nextDouble();
+        System.out.print("Enter \"c\" Value : ");
+        double c = s.nextDouble();
+
+        System.out.printf("a: %f, b: %f, c: %f%n", a, b, c);
+        if((b*b)-(4*a*c)<0)
+        {
+            System.out.print("There are No Real Solutions !!");
+        }
+        else
+        {
+            double r1 = (((double)((-b) +sqrt((b*b)-(4*a*c)) ) ) / 2);
+            double r2 = (((double)((-b) -sqrt((b*b)-(4*a*c)) ) ) / 2);
+            System.out.printf("The roots of equation are %.3f and %.3f", r1, r2);
+        }
+    }
 
 }
