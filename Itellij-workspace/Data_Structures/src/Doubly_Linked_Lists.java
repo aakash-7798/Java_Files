@@ -189,9 +189,10 @@ public class Doubly_Linked_Lists {
         }
         System.out.print("Doubly Linked List Elements : ");
         Node temp = head;
+        System.out.print("Null"+" <--> ");
         while(temp!=null)
         {
-            System.out.print(temp.data+" -> ");
+            System.out.print(temp.data+" <--> ");
             temp = temp.next;
         }
         System.out.print("Null");
@@ -204,9 +205,10 @@ public class Doubly_Linked_Lists {
         }
         System.out.print("Doubly Linked List Elements Reverse Order : ");
         Node temp = tail;
+        System.out.print("Null"+" <--> ");
         while(temp!=null)
         {
-            System.out.print(temp.data+" -> ");
+            System.out.print(temp.data+" <--> ");
             temp = temp.prev;
         }
         System.out.print("Null");
