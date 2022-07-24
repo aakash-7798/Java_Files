@@ -181,28 +181,28 @@ public class Queues_Using_Linked_List {
     public static void main(String[] args) {
         Queues_Using_Linked_List ql = new Queues_Using_Linked_List();
         int tmp_arr[] = {7, 4, 9, 2, 5, 0,25,78,9,8,5,2};
-        for(int i=0;i<tmp_arr.length;i++)
-        {
-            ql.Enqueue(tmp_arr[i]);
-        }
-
-//        for(int i=1;i<=15;i++)
+//        for(int i=0;i<tmp_arr.length;i++)
 //        {
-//            ql.Enqueue(i);
+//            ql.Enqueue(tmp_arr[i]);
 //        }
-
-
-
-        ql.print();
-//        System.out.println(ql.front.next.next.next.next.data);
-        ql.print_for();
-        ql.Enqueue_First(0);
-        ql.Enqueue_Last(16);
-        ql.Enqueue_After(25,30);
-        ql.Enqueue_After(7,3);
-        ql.Enqueue_After(16,45);
-        ql.Enqueue_After(789,450);
-//        ql.Dequeue();
+//
+////        for(int i=1;i<=15;i++)
+////        {
+////            ql.Enqueue(i);
+////        }
+//
+//
+//
+//        ql.print();
+////        System.out.println(ql.front.next.next.next.next.data);
+//        ql.print_for();
+//        ql.Enqueue_First(0);
+//        ql.Enqueue_Last(16);
+//        ql.Enqueue_After(25,30);
+//        ql.Enqueue_After(7,3);
+//        ql.Enqueue_After(16,45);
+//        ql.Enqueue_After(789,450);
+        ql.Dequeue();
 //        ql.Dequeue_last();
         
     }
