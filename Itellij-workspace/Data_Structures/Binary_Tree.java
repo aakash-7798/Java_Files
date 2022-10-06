@@ -1,3 +1,4 @@
+
 public class Binary_Tree {
     static class Node
     {
@@ -61,8 +62,9 @@ public class Binary_Tree {
 
 
     public static void main(String[] args) {
-        int values[] = {4,5,6,-1,-1,3,-1,-1,8,-1,9,-1,-1};
-//        int values[] = {4,5,6,3,8,9};
+        int values[] = {1,2,4,-1,-1,5,7,-1,-1,8,-1,-1,3,-1,6,-1,9,10,-1,-1,11,-1,-1};
+//        int values[] = {6,4,8,3,-1,-1,5,-1,-1,7,-1,-1,9,-1,-1};
+//        int values[] = {4,5,6,-1,-1,3,-1,-1,8,-1,9,-1,-1};
         B_Tree tree = new B_Tree();
         Node root = tree.create_tree(values);
         System.out.print("Pre-Order Traversal -> ");
