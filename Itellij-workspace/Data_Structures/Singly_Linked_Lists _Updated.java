@@ -150,17 +150,17 @@ public class Singly_Linked_Lists {
     {
         if (head==null)
         {
-            System.out.print("List is Empty ..    so no elements to print//");
+            System.out.print("List is Empty ..    so no elements to print//\n");
         }
         Node temp = head;
         System.out.print("Linked List Elements : ");
-        while(temp.next!=null)
+        while(temp!=null)
         {
             System.out.print(temp.data+" -> ");
             temp=temp.next;
         }
-        System.out.print(temp.data);
-        System.out.print("\n"+"Head = "+head.data+" "+" Size = "+size+"\n");
+        System.out.println();
+//        System.out.print("\n"+"Head = "+head.data+" "+" Size = "+size+"\n");
     }
     public static void main(String[] args)
     {
