@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -31,13 +32,18 @@ public class Array_Lists {
         Al2.addAll(Al1);
         System.out.print("\n"+"New Array List : "+Al2);
         System.out.print("\n"+"Last Occurence of Particular Element : "+Al.lastIndexOf(1));
-        System.out.print("\n"+"Set Element At Particular Index : "+Al1.set(8,19)+"     "+Al1);
-        System.out.print("\n"+"List Iterator : ");
-        ListIterator<Integer> LI = Al1.listIterator(3);
-        while (LI.hasNext())
-        {
-            System.out.print("\n"+"Value is : "+LI.next());
+        System.out.print("\n"+"Set Element At Particular Index : "+Al1.set(8,19));
+        System.out.print("\nList Elements ->"+Al1);
+//        System.out.print("\n"+"List Iterator: ");
+        ListIterator<Integer> LI = Al1.listIterator(Al1.size());
+        System.out.print("\n"+"List Iterator Previous: ");
+        while (LI.hasPrevious()){
+            System.out.print("\n"+"Value is : "+LI.previous());
         }
+//        while (LI.hasNext())
+//        {
+//            System.out.print("\n"+"Value is : "+LI.next());
+//        }
         List<Integer> sub_list = Al.subList(12,18);
         System.out.print("\n"+"Sublist : "+sub_list);
         System.out.print("\n"+"TrimToSize : ");

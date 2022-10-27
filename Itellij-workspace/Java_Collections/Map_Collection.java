@@ -27,11 +27,11 @@ public class Map_Collection {
 //          Lhm.put((String) Keys.next(),(Integer)Values.next());
 //          Tm.put((String) Keys.next(),(Integer)Values.next());
 //       }
-//        for(Map.Entry<String,Integer> e: Hm.entrySet())
-//        {
-//            System.out.println("e  " + e);
-//            System.out.print("keys : "+e.getKey()+"\n");
-//            System.out.print("Values : "+e.getValue()+"\n");
-//        }
+        for(Map.Entry<String,Integer> e: Hm.entrySet())
+        {
+            System.out.println("e  " + e);
+            System.out.print("keys : "+e.getKey()+"\n");
+            System.out.print("Values : "+e.getValue()+"\n");
+        }
     }
 }
